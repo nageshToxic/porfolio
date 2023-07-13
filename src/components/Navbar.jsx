@@ -1,8 +1,10 @@
 import React,{useState} from 'react'
-import {FaBars ,FaTimes ,FaGithub,FaLinkedin, FaFacebook} from "react-icons/fa"
+import {FaBars ,FaTimes ,FaGithub,FaLinkedin, FaInstagram} from "react-icons/fa"
 import { HiOutlineMail } from 'react-icons/hi';
 import {BsFillPersonLinesFill} from "react-icons/bs"
-import { icons } from 'react-icons/lib';
+import {Link} from 'react-scroll'
+import cv from "../images/cv.pdf"
+// import logo from "../images/logo4.png"
 
 const Navbar = () => {
 
@@ -14,14 +16,32 @@ const Navbar = () => {
     <>
    
 
-    <div className='fixed w-full bg-black text-white h-[60px] flex justify-between items-center px-5'>
-       <div className='cursor-pointer z-10  text-orange-400'>LOGO</div>
+    <div className='fixed w-full bg-black text-white h-[60px] flex justify-between items-center px-5 text-[18px] pt-6'>
+       <div className='cursor-pointer z-10  text-orange-400 '>
+         <h1  className='text-4xl'>Patil</h1>
+       </div>
      
          <ul className='hidden md:flex '>
-            <li>Home</li>
-            <li>about</li>
-            <li>contact</li>
-            <li>Help</li>
+            <li className='hover:text-orange-400  duration-500'>
+            <Link  to="home" smooth={true}  duration={500}>
+             Home
+            </Link>
+            </li>
+            <li className='hover:text-orange-400 duration-500'>
+            <Link  to="about" smooth={true}  duration={500}>
+             About
+             </Link>
+            </li>
+            <li className='hover:text-orange-400 duration-500'>
+            <Link  to="skills" smooth={true}  duration={500}>
+             Skills
+            </Link>
+            </li>
+            <li className='hover:text-orange-400 duration-500'>
+            <Link  to="contact" smooth={true}  duration={500}>
+             Contact
+            </Link>
+            </li>
          </ul>
      
 
@@ -31,10 +51,26 @@ const Navbar = () => {
        </div>
 
        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0  bg-black text-white w-full h-screen flex flex-col justify-center items-center'}>
-            <li className='py-4 text-3xl'>Home</li>
-            <li className='py-4 text-3xl'>about</li>
-            <li className='py-4 text-3xl'>contact</li>
-            <li className='py-4 text-3xl'>Help</li>
+            <li className='py-4 text-3xl'>
+            <Link onClick={handleClick} to="home" smooth={true}  duration={500}>
+             Home
+            </Link>
+            </li>
+            <li className='py-4 text-3xl'>
+            <Link onClick={handleClick} to="about" smooth={true}  duration={500}>
+             About
+             </Link>
+            </li>
+            <li className='py-4 text-3xl'>
+            <Link onClick={handleClick} to="skills" smooth={true}  duration={500}>
+             Skills
+            </Link>
+            </li>
+            <li className='py-4 text-3xl'>
+            <Link onClick={handleClick} to="contact" smooth={true}  duration={500}>
+             Contact
+            </Link>
+            </li>
          </ul>
 
          {/* social icons */}
@@ -44,6 +80,7 @@ const Navbar = () => {
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#807e7e33] rounded-md'>
                     <a className=' flex justify-between items-center w-full'
                      href="https://www.linkedin.com/in/nagesh-patil-913036226/">
+                      
                         LinkedIn <FaLinkedin size={30}/>
                     </a>
      
@@ -57,14 +94,14 @@ const Navbar = () => {
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#807e7e33] rounded-md'>
                     <a className=' flex justify-between items-center w-full'
-                     href="nageshpatilm4u@gmail.com">
-                        Email <HiOutlineMail size={30}/>
+                     href="https://www.instagram.com/__nagesh_patil_/" >
+                        Instagram <FaInstagram size={30}/>
                     </a>
      
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#807e7e33] rounded-md'>
                     <a className=' flex justify-between items-center w-full'
-                     href="https://drive.google.com/file/d/1qzmRR8OW0GHC-x5ZdXZmzg5jU3rctFYE/view?usp=sharing">
+                     href="https://drive.google.com/file/d/1qzmRR8OW0GHC-x5ZdXZmzg5jU3rctFYE/view?usp=sharing" download={cv}>
                         Resume <BsFillPersonLinesFill size={30}/>
                     </a>
      
