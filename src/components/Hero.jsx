@@ -13,6 +13,14 @@ const Hero = () => {
       }}
     />
   );
+
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div name="home" className="w-full h-screen bg-black text-white ">
@@ -28,7 +36,9 @@ const Hero = () => {
             applications{" "}
           </p>
           <div className="py-4">
-            <button className="my-2 group border-2 px-6 py-3 flex items-center hover:bg-orange-400 rounded-md duration-700">
+            <button className="my-2 group border-2 px-6 py-3 flex items-center hover:bg-orange-400 rounded-md duration-700"
+            onClick={scrollToAbout}
+            >
               Explore
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="ml-3" />

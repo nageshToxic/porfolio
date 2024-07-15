@@ -7,6 +7,9 @@ import Node from '../assets/node.png';
 import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png';
 import Mongo from '../assets/mongo.png';
+import REDUX from '../assets/redux.png';
+import NextJs from '../assets/nextjs.jpeg';
+import PostgreSql from '../assets/postgreql.png';
 
 const Skills = () => {
   return (
@@ -46,6 +49,22 @@ const Skills = () => {
               <div className='shadow-md shadow-[#6093e0]  hover:scale-110 duration-1000'>
                   <img className='w-20 mx-auto' src={Mongo} alt="HTML icon" />
                   <p className='my-4'>MONGO DB</p>
+              </div>
+              <div className='shadow-md shadow-[#6093e0]  hover:scale-110 duration-1000'>
+                  <img className='w-20 mx-auto' src={Tailwind} alt="HTML icon" />
+                  <p className='my-4'>TAILWIND</p>
+              </div>
+              <div className='shadow-md shadow-[#6093e0]  hover:scale-110 duration-1000'>
+                  <img className='w-20 mx-auto' src={REDUX} alt="HTML icon" />
+                  <p className='my-4'>REDUX</p>
+              </div>
+              <div className='shadow-md shadow-[#6093e0]  hover:scale-110 duration-1000'>
+                  <img className='w-20 mx-auto' src={NextJs} alt="HTML icon" />
+                  <p className='my-4'>NextJs</p>
+              </div>
+              <div className='shadow-md shadow-[#6093e0]  hover:scale-110 duration-1000'>
+                  <img className='w-20 mx-auto' src={PostgreSql} alt="HTML icon" />
+                  <p className='my-4'>PostgreSql</p>
               </div>
               <div className='shadow-md shadow-[#6093e0]  hover:scale-110 duration-1000'>
                   <img className='w-20 mx-auto' src={Tailwind} alt="HTML icon" />
