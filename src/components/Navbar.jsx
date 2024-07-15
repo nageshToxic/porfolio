@@ -1,10 +1,8 @@
 import React,{useState} from 'react'
 import {FaBars ,FaTimes ,FaGithub,FaLinkedin, FaInstagram} from "react-icons/fa"
-import { HiOutlineMail } from 'react-icons/hi';
 import {BsFillPersonLinesFill} from "react-icons/bs"
 import {Link} from 'react-scroll'
 import cv from "../images/cv.pdf"
-// import logo from "../images/logo4.png"
 
 const Navbar = () => {
 
@@ -97,11 +95,11 @@ const Navbar = () => {
                      href="https://www.instagram.com/__nagesh_patil_/" >
                         Instagram <FaInstagram size={30}/>
                     </a>
-     
                 </li>
+
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#807e7e33] rounded-md'>
                     <a className=' flex justify-between items-center w-full'
-                     href="https://drive.google.com/file/d/1qzmRR8OW0GHC-x5ZdXZmzg5jU3rctFYE/view?usp=sharing" download={cv}>
+                     href="https://drive.google.com/file/d/1Y_UyG8DB7_f6Do8zn1gmTyLV2EVQ8x2x/view?usp=sharing" download={cv}>
                         Resume <BsFillPersonLinesFill size={30}/>
                     </a>
      

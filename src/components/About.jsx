@@ -3,7 +3,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 
 const About = () => {
   return (
-    <div name="about" className="w-full bg-black h-screen text-white ">
+    <div name="about" id="about" className="w-full bg-black h-screen text-white ">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full  grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4  ">
@@ -30,10 +30,8 @@ const About = () => {
         </div>
         <div className="pt-10 sm:text-[20px]">
           <button className='my-2 group border-2 px-6 py-3 flex items-center justify-center hover:bg-orange-400 duration-700 rounded-md sm:text-rightw-[100px]'>
-          Download My Resume 
-          <span>
+            <a href="https://drive.google.com/file/d/1Y_UyG8DB7_f6Do8zn1gmTyLV2EVQ8x2x/view?usp=sharing">Download My Resume</a>
             <AiOutlineDownload className='ml-3' size={30} />
-          </span>
         </button>
         </div>
       </div>
