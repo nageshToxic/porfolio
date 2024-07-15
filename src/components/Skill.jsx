@@ -10,6 +10,7 @@ import Mongo from '../assets/mongo.png';
 import REDUX from '../assets/redux.png';
 import NextJs from '../assets/nextjs.jpeg';
 import PostgreSql from '../assets/postgreql.png';
+import Cpp from '../assets/cpp.png';
 
 const Skills = () => {
   return (
@@ -18,7 +19,6 @@ const Skills = () => {
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
           <div>
               <p className='text-4xl font-bold  text-orange-400'>Skills</p>
-              
           </div>
 
           <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 cursor-pointer' >
@@ -67,8 +67,8 @@ const Skills = () => {
                   <p className='my-4'>PostgreSql</p>
               </div>
               <div className='shadow-md shadow-[#6093e0]  hover:scale-110 duration-1000'>
-                  <img className='w-20 mx-auto' src={Tailwind} alt="HTML icon" />
-                  <p className='my-4'>TAILWIND</p>
+                  <img className='w-20 mx-auto' src={Cpp} alt="HTML icon" />
+                  <p className='my-4'>C++</p>
               </div>
             
           </div>

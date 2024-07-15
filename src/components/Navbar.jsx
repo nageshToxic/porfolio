@@ -6,8 +6,8 @@ import cv from "../images/cv.pdf"
 
 const Navbar = () => {
 
-  const [nav,setNav] =useState(false);
-  const handleClick = ()=>setNav(!nav);
+  const [nav,setNav] = useState(false);
+  const handleClick = ()=> setNav(!nav);
 
 
   return (
@@ -33,6 +33,11 @@ const Navbar = () => {
             <li className='hover:text-orange-400 duration-500'>
             <Link  to="skills" smooth={true}  duration={500}>
              Skills
+            </Link>
+            </li>
+            <li className='hover:text-orange-400 duration-500'>
+            <Link  to="projects" smooth={true}  duration={500}>
+             Projects
             </Link>
             </li>
             <li className='hover:text-orange-400 duration-500'>
@@ -62,6 +67,11 @@ const Navbar = () => {
             <li className='py-4 text-3xl'>
             <Link onClick={handleClick} to="skills" smooth={true}  duration={500}>
              Skills
+            </Link>
+            </li>
+            <li className='py-4 text-3xl'>
+            <Link onClick={handleClick} to="projects" smooth={true}  duration={500}>
+             Projects
             </Link>
             </li>
             <li className='py-4 text-3xl'>
